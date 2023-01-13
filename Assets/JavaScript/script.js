@@ -1,4 +1,5 @@
-var requestURL = 'http://api.openweathermap.org/geo/1.0/direct?q=London&limit=1&appid=d21b12879c795a0cfa44c139988b84a4';
+var city ="";
+var requestURL = 'http://api.openweathermap.org/geo/1.0/direct?q=' + city + 'limit=1&appid=d21b12879c795a0cfa44c139988b84a4';
 var latitude = "";
 var longitude = "";
 var cityname = "";
@@ -29,7 +30,10 @@ fetch (requestURL)
                     })
                             .then(function (data2) {
                         
-                                 console.log(data2.main)        
+                                 console.log(data2.main); 
+                                 console.log(data2.wind);    
+                                 console.log(data2.weather); 
+
                              });
             }
     })
@@ -37,9 +41,11 @@ fetch (requestURL)
 
 
 
-$('#button1').on("click", function(){
-    alert("button was clicked");
+$('#SubmitButton').on("click", function(){
+    city = $(".form-control").val();
+    console.log(city);
     getlocation();
+    
 })
 
 });
