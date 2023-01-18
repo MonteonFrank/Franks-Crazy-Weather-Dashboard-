@@ -27,5 +27,17 @@ aside {
 .mainForecastTitle{
   padding-left: 15%;
   margin-left: 5%;
-
 }
+
+.fivedaycontainer{
+display: flex;
+align-items: stretch;
+justify-content: space-around;
+}
+
+#col1,#col2,#col3,#col4,#col5{
+
+  background-color: blue;
+  color: white;
+}
+

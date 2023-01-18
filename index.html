@@ -44,7 +44,7 @@ crossorigin="anonymous"
     
     <aside>
         <div class="input-group flex-nowrap" id="addcitybutton">
-            <span class="input-city-text">City Name:</span>
+            <span class="input-city-text">City Name : </span>
             <input type="text" class="form-control" placeholder="City">
         </div>
         <div id="buttonlist" >
@@ -53,24 +53,64 @@ crossorigin="anonymous"
         </div>
     </aside>
 
-    <div class="MainForecastContainer">Main Forecast</div>
-        <p class="WeatherForecast0"></p>
-        <p class="WeatherForecast1"></p>
-        <p class="WeatherForecast2"></p>
-        <p class="WeatherForecast3"></p>
-        <p class="WeatherForecast4"></p>
+    <div class="MainForecastContainer">
+        <h2>Main Forecast</h2>
+        <br>
+        <h5 id="citylabel" style="display: none">City : <span id="city"></span></h5>
+        <p id="temperaturelabel" style="display: none">Temperature : <span id="temp"></span></p>
+        <p id="humiditylabel" style="display: none">Humidity : <span id="humid"></span></p>
+        <p id="windlabel" style="display: none">Wind : <span id="wind"></span></p>
+        <img src="" id="weathericon"></p>
     </div>
 
 
-    <div class="container text-center">
-        <div class="row row-cols-5">
-          <div class="col0">Column</div>
-          <div class="col1">Column</div>
-          <div class="col2">Column</div>
-          <div class="col3">Column</div>
-          <div class="col4">Column</div>
+    <div class="fivedaycontainer">
+        <div>
+          <h5 id="col1" style="display: none"> Forecast 1:</h5>
+            <p id="day0time" style="display: none">Time</p>
+            <p id="day0temp" style="display: none">Temp: </p>
+            <p id="day0humid" style="display: none">Humid: </p>
+            <p id="day0wind" style="display: none">Wind: </p>
+            <img src="" id="day0icon" style="display: none"></p>
         </div>
-      </div>
+
+        <div>
+            <h5 id="col2" style="display: none"> Forecast 2:</h5>
+                <p id="day1time" style="display: none">Time</p>
+              <p id="day1temp" style="display: none">Temp: </p>
+              <p id="day1humid" style="display: none">Humid: </p>
+              <p id="day1wind" style="display: none">Wind: </p>
+              <img src ="" id="day1icon" style="display: none"></p>
+        </div>
+
+        <div>
+            <h5 id="col3" style="display: none"> Forecast 3:</h5>
+                <p id="day2time" style="display: none">Time</p>
+              <p id="day2temp" style="display: none">Temp: </p>
+              <p id="day2humid" style="display: none">Humid: </p>
+              <p id="day2wind" style="display: none">Wind: </p>
+              <img src="" id="day2icon" style="display: none"></p>
+        </div>
+
+        <div>
+            <h5 id="col4" style="display: none"> Forecast 4:</h5>
+                <p id="day3time" style="display: none">Time</p>
+              <p id="day3temp" style="display: none">Temp: </p>
+              <p id="day3humid" style="display: none">Humid: </p>
+              <p id="day3wind" style="display: none">Wind: </p>
+              <img src="" id="day3icon" style="display: none"></p>
+        </div>
+
+        <div>
+            <h5 id="col5" style="display: none"> Forecast 5:</h5>
+            <p id="day4time" style="display: none">Time</p>
+              <p id="day4temp" style="display: none">Temp: </p>
+              <p id="day4humid" style="display: none">Humid: </p>
+              <p id="day4wind" style="display: none">Wind: </p>
+              <img src="" id="day4icon" style="display: none"></p>
+        </div>
+
+    </div>
       
       <script src="./Assets/JavaScript/script.js"></script>
 </body>
