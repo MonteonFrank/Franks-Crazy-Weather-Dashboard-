@@ -1,3 +1,4 @@
+
 //Global Variables
 var city ="";
 var latitude = "";
