@@ -11,6 +11,7 @@ $(document).ready(function () {
     //Obtain the city name from the form and stores it in the city value
     //Creates a button with the city name and adds it to the side of the HTML page
     //Calls the API function
+    //Upon clicking on the button, the page is 
     $('#SubmitButton').on("click", function(){
 
         city = $(".form-control").val();
