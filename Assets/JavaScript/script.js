@@ -1,4 +1,3 @@
-
 //Global Variables
 var city ="";
 var latitude = "";
@@ -39,7 +38,7 @@ $(document).ready(function () {
     //API for geolocation is called to obtain the latitude and longitude coordnates and uses the city variable
     function getlocation(city){
 
-        fetch ("http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=1&appid=d21b12879c795a0cfa44c139988b84a4")
+        fetch ("https://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=1&appid=d21b12879c795a0cfa44c139988b84a4")
             
             .then(function(response){
                 
@@ -53,7 +52,7 @@ $(document).ready(function () {
                     longitude = data[i].lon
 
                     //Once the latitude and longitude are obtained, we call the second API to obtain the current weather using these variables
-                    var weather = "http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&units=metric&cnt=5&appid=d21b12879c795a0cfa44c139988b84a4";
+                    var weather = "https://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&units=metric&cnt=5&appid=d21b12879c795a0cfa44c139988b84a4";
            
                             
                             fetch(weather)
@@ -87,7 +86,7 @@ $(document).ready(function () {
                                 });
 
                     //Obtain the 5 day weather forecast
-                    var fivedayweather = 'http://api.openweathermap.org/data/2.5/forecast?lat='+latitude+'&lon='+longitude+'&units=metric&cnt=5&appid=d21b12879c795a0cfa44c139988b84a4'
+                    var fivedayweather = 'https://api.openweathermap.org/data/2.5/forecast?lat='+latitude+'&lon='+longitude+'&units=metric&cnt=5&appid=d21b12879c795a0cfa44c139988b84a4'
                             
                             fetch (fivedayweather)
 
