@@ -19,7 +19,7 @@
 <h2><strong>Screenshots and links</strong></h2>
 <p>How the webpage should look when opening:</p>
 ![image](https://user-images.githubusercontent.com/112662397/213325087-dbacb46d-18a0-41a9-af63-3ff1fc812fc3.png)
-
+ <p></p>
 <p>When searching for a city:</p>
 ![image](https://user-images.githubusercontent.com/112662397/213325325-e15a146f-7820-4133-a1ed-3b6c722077ff.png)
 <p></p>
