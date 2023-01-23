@@ -22,13 +22,13 @@
 
 <p>When searching for a city:</p>
 ![image](https://user-images.githubusercontent.com/112662397/213325325-e15a146f-7820-4133-a1ed-3b6c722077ff.png)
-
+<p></p>
 <p>Searching for a second city the history is populated on the left side:</p>
 ![image](https://user-images.githubusercontent.com/112662397/213325470-34e5d59a-6339-4dfe-bd47-e6781c96a0a2.png)
-
+<p></p>
 <p>When selecting a city from the history, the weather is shown again:</p>
 ![image](https://user-images.githubusercontent.com/112662397/213325565-98a533d5-8cf9-4681-8f00-e92f6c309f67.png)
-
+<p></p>
 <p>Link to github pages:</p>
 https://monteonfrank.github.io/Franks-Crazy-Weather-Dashboard-/
 
